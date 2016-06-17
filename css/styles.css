@@ -27,8 +27,8 @@ body {
 
 .inner {
   background-color: white;
+  min-height: 222px;
   padding: 8%;
-  height: 100
 }
 
 .question h4 {
@@ -41,12 +41,24 @@ body {
 }
 
 .question h6 {
-  margin: 0;
+  padding-left: 10px;
 }
 
 .radio {
   margin-top: 0;
   padding: 3% 3%;
+}
+
+/*select {
+  margin-top: 25%;
+}
+
+#participant-name {
+  margin-top: 25%;
+}*/
+
+#participant-name, input[name="timing"] {
+  min-height: 35px;
 }
 
 button {
