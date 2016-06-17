@@ -1,7 +1,18 @@
+var name;
+var climate;
+var stressLevel;
+var transit;
+var budget;
+
 $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     $(".initially-hidden").hide();
+
+    name = $("input#participant-name").val();
+
+    $("#result-name").text(name);
+
 
     //INSERT NAME INTO A SPAN IN RESULTS
 
@@ -45,3 +56,5 @@ temperate
 
 expensive
 moderate
+
+*/

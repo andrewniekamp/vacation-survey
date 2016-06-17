@@ -29,7 +29,7 @@
           <div class="question form-group col-sm-4">
             <h4>What is your first name?</h4>
             <div class="entry-field form-group">
-              <input type="text" name="name" value="">
+              <input type="text" id="participant-name" value="">
             </div>
           </div>
 
@@ -64,24 +64,16 @@
           <div class="question form-group col-sm-4">
             <h4>Which sounds the most appealing?</h4>
             <div class="radio">
-              <label>
-                <input type="radio" name="stress-level" value="high">Exhilarating
-              </label>
+              <label><input type="radio" name="stress-level" value="high">Exhilarating</label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="stress-level" value="medium">Interesting
-              </label>
+              <label><input type="radio" name="stress-level" value="medium">Interesting</label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="stress-level" value="low">Relaxing
-              </label>
+              <label><input type="radio" name="stress-level" value="low">Relaxing</label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="stress-level" value="any">Any of the Above
-              </label>
+              <label><input type="radio" name="stress-level" value="any">Any of the Above</label>
             </div>
           </div>
 
@@ -103,24 +95,16 @@
           <div class="question form-group col-sm-4">
             <h4>Which option fits your current budget?</h4>
             <div class="radio">
-              <label>
-                <input type="radio" name="cost" value="high">Expensive
-              </label>
+              <label><input type="radio" name="cost" value="high">Expensive</label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="cost" value="medium">Moderate
-              </label>
+              <label><input type="radio" name="cost" value="medium">Moderate</label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="cost" value="low">Inexpensive
-              </label>
+              <label><input type="radio" name="cost" value="low">Inexpensive</label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="stress-level" value="any">Any of the Above
-              </label>
+              <label><input type="radio" name="stress-level" value="any">Any of the Above</label>
             </div>
           </div>
         </div>
@@ -131,7 +115,7 @@
       <div class="row">
         <div class="destination">
           <!-- RETURN NAME HERE -->
-          <h1>Here is where you should go:</h1>
+          <h1>Here is where you should go, <span id="result-name"></span>.</h1>
           <div class="initially-hidden" id="machu-picchu">
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/fa/61/0a/machu-picchu.jpg" alt="Machu Picchu" />
           </div>
