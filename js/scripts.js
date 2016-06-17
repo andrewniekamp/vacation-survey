@@ -38,6 +38,8 @@ $(function() {
       $("#savannah").show();
     } else if (stressLevel === "low"){
       if (budget === "low") {
+        $("#myrtle").show();
+      } else if (budget === "medium"){
         $("#punta-cana").show();
       } else {
         $("#santorini").show();
