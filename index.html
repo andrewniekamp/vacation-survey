@@ -23,87 +23,100 @@
           <!-- QUESTION 1 -->
           <div class="question form-group col-sm-4">
             <h4>What is your first name?</h4>
-            <div class="entry-field form-group">
-              <input type="text" id="participant-name" value="">
+            <div class="inner">
+              <div class="entry-field form-group">
+                <input type="text" id="participant-name" value="">
+              </div>
             </div>
           </div>
 
-          <!-- QUESTION 2 -->
-          <div class="question form-group col-sm-4">
-            <h4>Which climate is most appealing?</h4>
-            <div class="drop-down">
-              <select class="form-control" id="climate">
-                <option value="any">Please Select an Option</option>
-                <option value="hot">Hot</option>
-                <option value="temperate">Temperate</option>
-                <option value="cold">Cold</option>
-                <option value="any">Any of the Above</option>
-              </select>
+            <!-- QUESTION 2 -->
+            <div class="question form-group col-sm-4">
+              <h4>Which climate is most appealing?</h4>
+              <div class="inner">
+                <div class="drop-down">
+                  <select class="form-control" id="climate">
+                    <option value="any">Please Choose</option>
+                    <option value="hot">Hot</option>
+                    <option value="temperate">Temperate</option>
+                    <option value="cold">Cold</option>
+                    <option value="any">Any of the Above</option>
+                  </select>
+                </div>
+              </div>
             </div>
-          </div>
 
           <!-- QUESTION 3 -->
           <div class="question form-group col-sm-4">
             <h4>When would you like to depart?</h4>
-            <h6>An approximate date is fine.</h6>
-            <div class="date-box form-group">
-              <label for="timing">
-              </label>
-              <input type="date" name="timing">
+            <div class="inner">
+              <h6>An approximate date is fine.</h6>
+              <div class="date-box form-group">
+                <label for="timing">
+                </label>
+                <input type="date" name="timing">
+              </div>
             </div>
           </div>
         </div>
-
         <div class="row">
           <!-- QUESTION 4 -->
           <div class="question form-group col-sm-4">
-            <h4>Which sounds the most appealing?</h4>
-            <div class="radio">
-              <label><input type="radio" name="stress-level" value="high">Exhilarating</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="stress-level" value="medium">Interesting</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="stress-level" value="low">Relaxing</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="stress-level" value="any">Any of the Above</label>
+            <h4>Which of the following is most appealing?</h4>
+            <div class="inner">
+              <div class="radio">
+                <label><input type="radio" name="stress-level" value="high">Exhilarating</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="stress-level" value="medium">Interesting</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="stress-level" value="low">Relaxing</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="stress-level" value="any">Any of the Above</label>
+              </div>
             </div>
           </div>
 
           <!-- QUESTION 5 -->
           <div class="question form-group col-sm-4">
             <h4>How would you prefer to travel?</h4>
-            <div class="drop-down">
-              <select class="form-control" id="travel-option">
-                <option value="any">Please Select an Option</option>
-                <option value="plane">Plane</option>
-                <option value="train">Train</option>
-                <option value="automobile">Automobile</option>
-                <option value="any">Any of the Above</option>
-              </select>
+            <div class="inner">
+              <div class="drop-down">
+                <select class="form-control" id="travel-option">
+                  <option value="any">Please Choose</option>
+                  <option value="plane">Plane</option>
+                  <option value="train">Train</option>
+                  <option value="automobile">Automobile</option>
+                  <option value="any">Any of the Above</option>
+                </select>
+              </div>
             </div>
           </div>
 
           <!-- QUESTION 6 -->
           <div class="question form-group col-sm-4">
             <h4>Which option fits your current budget?</h4>
-            <div class="radio">
-              <label><input type="radio" name="cost" value="high">More Expensive</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="cost" value="medium">Moderately Expensive</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="cost" value="low">Less Expensive</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="cost" value="any">Any of the Above</label>
+            <div class="inner">
+              <div class="radio">
+                <label><input type="radio" name="cost" value="high">More Expensive</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="cost" value="medium">Moderately Expensive</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="cost" value="low">Less Expensive</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="cost" value="any">Any of the Above</label>
+              </div>
             </div>
           </div>
         </div>
-        <button type="submit" class="btn" id="submit-button">Get Your Personalized Results</button>
+        <div class="row" id="button-container">
+          <button type="submit" class="btn" id="submit-button"><strong>Get Your Personalized Results</strong></button>
+        </div>
       </form>
 
       <!-- RESULT AREA -->
@@ -112,7 +125,7 @@
           <div id="result-header">
             <h1>Here is where you should go, <span class="result-name"></span>.</h1>
           </div>
-          <h1 class="initially-hidden">Well, <span class="result-name"></span>, you have varied interests - so varied, in fact, that you have wrecked our survey and we just don't have a perfect choice for you. Please consider any of the following destinations, or feel free to try the survey again.</h1>
+          <h1 class="initially-hidden">Well, <span class="result-name"></span>, we just don't have a perfect choice for you, but please consider any of the following destinations, or feel free to try the survey again.</h1>
           <div class="initially-hidden" id="machu-picchu">
             <h1>Machu Picchu, Peru</h1>
             <p>Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it's renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments, and panoramic views. Its exact former use remains a mystery.</p>
