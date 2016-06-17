@@ -30,26 +30,26 @@ $(function() {
       } else {
         $("#rio-de-janeiro").show();
       }
+    } else if (climate === "cold") {
+      $("#denali").show();
+    } else if (transit === "train" || transit === "automobile") {
+      $("#savannah").show();
+    } else if (stressLevel === "low"){
+      if (budget === "low") {
+        $("#punta-cana").show();
+      } else {
+        $("#santorini").show();
+      }
+    } else if (stressLevel === "medium") {
+      if (budget === "low") {
+        $("#denali").show();
+
+      } else if (budget === "medium") {
+        $("#cambodia").show();
+      } else {
+        $("#santorini").show();
+      }
     }
-
-    // $("#result-header").show();
-
-    //ELSE IF (exhilirating)
-      //if (cheap)
-        //DENALI
-      //else if moderate
-        //MACHU PICCHU
-      //else
-        //RIO
-
-    //ELSE IF cold
-      //DENALI
-
-    //ELSE IF (Automobile || train)
-      //SAVANNAH
-
-    //ELSE IF (relaxing)
-      //PUNTO CANA
 
     //ELSE IF interesting
       //IF cheap
@@ -59,7 +59,7 @@ $(function() {
 
 
 
-
+    // insert this later: <h1>Here is where you should go, <span class="result-name"></span>.</h1>
     //IMPORTANT
     //FOR FINAL ELSE OF CHOICES
     //$(".initially-hidden").show();
