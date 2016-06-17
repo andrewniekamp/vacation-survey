@@ -49,26 +49,12 @@
 
           <!-- QUESTION 3 -->
           <div class="question col-sm-4">
-            <h4>Which option fits your current budget?</h4>
-            <div class="radio">
-              <label>
-                <input type="radio" name="cost" value="high">Expensive
+            <h4>When would you like to depart?</h4>
+            <h6>An approximate date is fine.</h6>
+            <div class="date-box form-group">
+              <label for="timing">
               </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="cost" value="medium">Moderate
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="cost" value="low">Inexpensive
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="stress-level" value="any">Any of the Above
-              </label>
+              <input type="date" name="timing">
             </div>
           </div>
         </div>
@@ -101,17 +87,40 @@
 
           <!-- QUESTION 5 -->
           <div class="question col-sm-4">
-
+            <h4>How would you prefer to travel?</h4>
+            <div class="drop-down">
+              <select class="form-control" id="climate">
+                <option value="any">Please Select an Option</option>
+                <option value="high">Plane</option>
+                <option value="medium">Train</option>
+                <option value="low">Automobile</option>
+                <option value="any">Any of the Above</option>
+              </select>
+            </div>
           </div>
 
           <!-- QUESTION 6 -->
           <div class="question col-sm-4">
-            <h4>When would you like to depart?</h4>
-            <h6>An approximate date is fine.</h6>
-            <div class="date-box form-group">
-              <label for="timing">
+            <h4>Which option fits your current budget?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cost" value="high">Expensive
               </label>
-              <input type="date" name="timing">
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cost" value="medium">Moderate
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cost" value="low">Inexpensive
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="stress-level" value="any">Any of the Above
+              </label>
             </div>
           </div>
         </div>
