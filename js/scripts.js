@@ -34,11 +34,11 @@ $(function() {
         $("#grand-canyon").fadeIn(1200);
       } else if (budget === "medium"){
         $("#machu-picchu").fadeIn(1200);
-      } else {
+      } else if (climate !== "cold"){
         $("#rio-de-janeiro").fadeIn(1200);
+      } else {
+        $("#denali").fadeIn(1200);
       }
-    } else if (climate === "cold") {
-      $("#denali").fadeIn(1200);
     } else if (transit === "train" || transit === "automobile") {
       $("#savannah").fadeIn(1200);
     } else if (stressLevel === "low"){
@@ -69,10 +69,8 @@ $(function() {
   });
 
   $("#return").click(function() {
+    $("#result-header").fadeOut(200);
     $(".initially-hidden").fadeOut(200);
     $(".intro-section, form").fadeIn(1200);
   });
 });
-
-
-//MAKE HEADER AND SURVEY FADOUT THEN FADEIN RESULTS? ALSO BUTTON TO SHOW SURVEY AGAIN?
