@@ -22,75 +22,81 @@
       </div>
 
       <!-- QUESTIONS -->
-      <div class="row">
+      <form>
+        <div class="row">
 
-        <!-- QUESTION 1 -->
-        <div class="question col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="stress-level" value="high">Exhilarating
-            </label>
+          <!-- QUESTION 1 -->
+          <div class="question col-sm-4">
+            <div class="entry-field form-group">
+              <label for="name">Please tell us your first name:</label>
+              <input type="text" name="name" value="">
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="stress-level" value="medium">Interesting
-            </label>
+
+          <!-- QUESTION 2 -->
+          <div class="question col-sm-4">
+            <div class="drop-down">
+              <select class="form-control" id="climate">
+                <option value="any">Any</option>
+                <option value="high">Hot</option>
+                <option value="medium">Temperate</option>
+                <option value="low">Cold</option>
+              </select>
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="stress-level" value="low">Relaxing
-            </label>
+
+          <!-- QUESTION 3 -->
+          <div class="question col-sm-4">
+            <div class="radio">
+              <label>
+                <input type="radio" name="cost" value="high">Expensive
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cost" value="medium">Moderate
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cost" value="low">Inexpensive
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- QUESTION 4 -->
+          <div class="question col-sm-4">
+            <div class="radio">
+              <label>
+                <input type="radio" name="stress-level" value="high">Exhilarating
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="stress-level" value="medium">Interesting
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="stress-level" value="low">Relaxing
+              </label>
+            </div>
+          </div>
+
+          <!-- QUESTION 5 -->
+          <div class="question col-sm-4">
+
+          </div>
+
+          <!-- QUESTION 6 -->
+          <div class="question col-sm-4">
+
           </div>
         </div>
 
-        <!-- QUESTION 2 -->
-        <div class="question col-sm-4">
-          <div class="drop-down">
-            <select class="form-control" id="climate">
-              <option value="any">Any</option>
-              <option value="high">Hot</option>
-              <option value="medium">Temperate</option>
-              <option value="low">Cold</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- QUESTION 3 -->
-        <div class="question col-sm-4">
-          <div class="radio">
-            <label>
-              <input type="radio" name="cost" value="high">Expensive
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="cost" value="medium">Moderate
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="cost" value="low">Inexpensive
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- QUESTION 4 -->
-        <div class="question col-sm-4">
-
-        </div>
-
-        <!-- QUESTION 5 -->
-        <div class="question col-sm-4">
-
-        </div>
-
-        <!-- QUESTION 6 -->
-        <div class="question col-sm-4">
-
-        </div>
-      </div>
+      </form>
 
     </div>
   </body>
