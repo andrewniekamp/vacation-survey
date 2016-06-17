@@ -22,7 +22,7 @@ body {
 /*QUESTION SECTION*/
 .question {
   background-color: transparent;
-  padding: 3%;
+  padding: 2% 2% 0 2%;
 }
 
 .inner {
@@ -49,15 +49,13 @@ body {
   padding: 3% 3%;
 }
 
-/*select {
-  margin-top: 25%;
+#participant-name, input[name="timing"] {
+  min-height: 35px;
 }
 
-#participant-name {
-  margin-top: 25%;
-}*/
-
-#participant-name, input[name="timing"] {
+#travel-option, #climate {
+  border-radius: 0;
+  box-shadow: none;
   min-height: 35px;
 }
 
@@ -68,7 +66,7 @@ button {
   min-width: 250px;
 }
 
-#button-container {
+#center-btn, #center-btn2 {
   text-align: center;
   margin: auto;
   padding: 5%;

@@ -10,6 +10,7 @@ $(function() {
     event.preventDefault();
     $(".initially-hidden").hide();
     $("#result-header").hide();
+    $("html, body").scrollTop(0);
 
     name = $("input#participant-name").val();
     climate = $("#climate").val();
@@ -63,3 +64,6 @@ $(function() {
     }
   });
 });
+
+
+//MAKE HEADER AND SURVEY FADOUT THEN FADEIN RESULTS? ALSO BUTTON TO SHOW SURVEY AGAIN?
