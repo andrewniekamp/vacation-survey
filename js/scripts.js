@@ -10,6 +10,7 @@ $(function() {
     event.preventDefault();
     $(".initially-hidden").hide();
     $("#result-header").hide();
+    $(".intro-section, form").fadeOut();
     $("html, body").scrollTop(0);
 
     name = $("input#participant-name").val();
@@ -27,41 +28,46 @@ $(function() {
 
     if (stressLevel === "high") {
       if (budget === "low" && climate !== "hot") {
-        $("#denali").show();
+        $("#denali").fadeIn(1200);
       } else if (budget === "low"){
-        $("#grand-canyon").show();
+        $("#grand-canyon").fadeIn(1200);
       } else if (budget === "medium"){
-        $("#machu-picchu").show();
+        $("#machu-picchu").fadeIn(1200);
       } else {
-        $("#rio-de-janeiro").show();
+        $("#rio-de-janeiro").fadeIn(1200);
       }
     } else if (climate === "cold") {
-      $("#denali").show();
+      $("#denali").fadeIn(1200);
     } else if (transit === "train" || transit === "automobile") {
-      $("#savannah").show();
+      $("#savannah").fadeIn(1200);
     } else if (stressLevel === "low"){
       if (budget === "low") {
-        $("#myrtle").show();
+        $("#myrtle").fadeIn(1200);
       } else if (budget === "medium"){
-        $("#punta-cana").show();
+        $("#punta-cana").fadeIn(1200);
       } else {
-        $("#santorini").show();
+        $("#santorini").fadeIn(1200);
       }
     } else if (stressLevel === "medium") {
       if (budget === "low") {
-        $("#savannah").show();
+        $("#savannah").fadeIn(1200);
       } else if (budget === "medium") {
-        $("#cambodia").show();
+        $("#cambodia").fadeIn(1200);
       } else {
-        $("#santorini").show();
+        $("#santorini").fadeIn(1200);
       }
     } else {
-      $(".initially-hidden").show();
+      $(".initially-hidden").fadeIn(1200);
       success = false;
     }
     if (success === true) {
       $("#result-header").show();
     }
+  });
+
+  $("#return").click(function() {
+    $(".initially-hidden").fadeOut();
+    $(".intro-section, form").fadeIn();
   });
 });
 
