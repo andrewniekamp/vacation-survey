@@ -10,8 +10,9 @@ $(function() {
     event.preventDefault();
     $(".initially-hidden").hide();
     $("#result-header").hide();
-    $(".intro-section, form").fadeOut();
-    $("html, body").scrollTop(0);
+    $(".intro-section, form").fadeOut('fast', function() {
+      $("html, body").scrollTop(0);
+    });
 
     name = $("input#participant-name").val();
     climate = $("#climate").val();
@@ -61,13 +62,15 @@ $(function() {
       success = false;
     }
     if (success === true) {
-      $("#result-header").show();
+      $("#result-header").fadeIn(1200);
+      $('#center-btn2').fadeIn(1200);
+      $('#return').fadeIn(1200);
     }
   });
 
   $("#return").click(function() {
-    $(".initially-hidden").fadeOut();
-    $(".intro-section, form").fadeIn();
+    $(".initially-hidden").fadeOut(200);
+    $(".intro-section, form").fadeIn(1200);
   });
 });
 
