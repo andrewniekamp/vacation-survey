@@ -25,8 +25,10 @@ $(function() {
     }
 
     if (stressLevel === "high") {
-      if (budget === "low") {
+      if (budget === "low" && climate !== "hot") {
         $("#denali").show();
+      } else if (budget === "low"){
+        $("#grand-canyon").show();
       } else if (budget === "medium"){
         $("#machu-picchu").show();
       } else {
@@ -47,7 +49,6 @@ $(function() {
     } else if (stressLevel === "medium") {
       if (budget === "low") {
         $("#savannah").show();
-
       } else if (budget === "medium") {
         $("#cambodia").show();
       } else {
