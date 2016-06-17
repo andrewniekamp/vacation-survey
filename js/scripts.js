@@ -8,6 +8,7 @@ $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     $(".initially-hidden").hide();
+    $("#result-header").hide();
 
     name = $("input#participant-name").val();
     climate = $("#climate").val();
@@ -15,12 +16,17 @@ $(function() {
     transit = $("#travel-option").val();
     budget = $("input:radio[name=cost]:checked").val();
 
-    $("#result-name").text(name);
+    if (name === "") {
+      $(".result-name").text("My friend");
+    } else {
+      $(".result-name").text(name);
+    }
+    // $("#result-header").show();
 
-    //IF (all any)
-      //please try again, or show all
+    //FOR FINAL ELSE OF CHOICES
+    $(".initially-hidden").show();
 
-    // ELSE IF (exhilirating)
+    //ELSE IF (exhilirating)
       //if (cheap)
         //DENALI
       //else if moderate
