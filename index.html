@@ -27,26 +27,29 @@
 
           <!-- QUESTION 1 -->
           <div class="question col-sm-4">
+            <h4>What is your first name?</h4>
             <div class="entry-field form-group">
-              <label for="name">Please tell us your first name:</label>
               <input type="text" name="name" value="">
             </div>
           </div>
 
           <!-- QUESTION 2 -->
           <div class="question col-sm-4">
+            <h4>Which climate is most appealing?</h4>
             <div class="drop-down">
               <select class="form-control" id="climate">
-                <option value="any">Any</option>
+                <option value="any">Please Select an Option</option>
                 <option value="high">Hot</option>
                 <option value="medium">Temperate</option>
                 <option value="low">Cold</option>
+                <option value="any">Any of the Above</option>
               </select>
             </div>
           </div>
 
           <!-- QUESTION 3 -->
           <div class="question col-sm-4">
+            <h4>Which option fits your current budget?</h4>
             <div class="radio">
               <label>
                 <input type="radio" name="cost" value="high">Expensive
@@ -62,12 +65,18 @@
                 <input type="radio" name="cost" value="low">Inexpensive
               </label>
             </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="stress-level" value="any">Any of the Above
+              </label>
+            </div>
           </div>
         </div>
 
         <div class="row">
           <!-- QUESTION 4 -->
           <div class="question col-sm-4">
+            <h4>Which sounds the most appealing?</h4>
             <div class="radio">
               <label>
                 <input type="radio" name="stress-level" value="high">Exhilarating
@@ -83,6 +92,11 @@
                 <input type="radio" name="stress-level" value="low">Relaxing
               </label>
             </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="stress-level" value="any">Any of the Above
+              </label>
+            </div>
           </div>
 
           <!-- QUESTION 5 -->
@@ -92,7 +106,13 @@
 
           <!-- QUESTION 6 -->
           <div class="question col-sm-4">
-
+            <h4>When would you like to depart?</h4>
+            <h6>An approximate date is fine.</h6>
+            <div class="date-box form-group">
+              <label for="timing">
+              </label>
+              <input type="date" name="timing">
+            </div>
           </div>
         </div>
 
