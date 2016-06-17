@@ -42,22 +42,16 @@ $(function() {
       }
     } else if (stressLevel === "medium") {
       if (budget === "low") {
-        $("#denali").show();
+        $("#savannah").show();
 
       } else if (budget === "medium") {
         $("#cambodia").show();
       } else {
         $("#santorini").show();
       }
+    } else {
+      $(".initially-hidden").show();
     }
-
-    //ELSE IF interesting
-      //IF cheap
-        //CAMBODIA
-      //else
-        //SANTORINI
-
-
 
     // insert this later: <h1>Here is where you should go, <span class="result-name"></span>.</h1>
     //IMPORTANT
