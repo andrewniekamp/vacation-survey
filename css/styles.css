@@ -1,3 +1,7 @@
 .initially-hidden, #result-header {
   display: none;
 }
+
+.initially-hidden img {
+  width: 90%;
+}

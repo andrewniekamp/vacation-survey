@@ -21,10 +21,18 @@ $(function() {
     } else {
       $(".result-name").text(name);
     }
-    // $("#result-header").show();
 
-    //FOR FINAL ELSE OF CHOICES
-    $(".initially-hidden").show();
+    if (stressLevel === "high") {
+      if (budget === "low") {
+        $("#denali").show();
+      } else if (budget === "medium"){
+        $("#machu-picchu").show();
+      } else {
+        $("#rio-de-janeiro").show();
+      }
+    }
+
+    // $("#result-header").show();
 
     //ELSE IF (exhilirating)
       //if (cheap)
@@ -50,6 +58,11 @@ $(function() {
         //SANTORINI
 
 
+
+
+    //IMPORTANT
+    //FOR FINAL ELSE OF CHOICES
+    //$(".initially-hidden").show();
 
 
   })
