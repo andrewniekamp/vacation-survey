@@ -10,11 +10,12 @@ $(function() {
     $(".initially-hidden").hide();
 
     name = $("input#participant-name").val();
+    climate = $("#climate").val();
+    stressLevel = $("input:radio[name=stress-level]:checked").val();
+    transit = $("#travel-option").val();
+    budget = $("input:radio[name=cost]:checked").val();
 
     $("#result-name").text(name);
-
-
-    //INSERT NAME INTO A SPAN IN RESULTS
 
     //IF (all any)
       //please try again, or show all
