@@ -3,6 +3,7 @@ var climate;
 var stressLevel;
 var transit;
 var budget;
+var success;
 
 $(function() {
   $("form").submit(function(event) {
@@ -15,9 +16,10 @@ $(function() {
     stressLevel = $("input:radio[name=stress-level]:checked").val();
     transit = $("#travel-option").val();
     budget = $("input:radio[name=cost]:checked").val();
+    success = true;
 
     if (name === "") {
-      $(".result-name").text("My friend");
+      $(".result-name").text("my friend");
     } else {
       $(".result-name").text(name);
     }
@@ -51,24 +53,10 @@ $(function() {
       }
     } else {
       $(".initially-hidden").show();
+      success = false;
     }
-
-    // insert this later: <h1>Here is where you should go, <span class="result-name"></span>.</h1>
-    //IMPORTANT
-    //FOR FINAL ELSE OF CHOICES
-    //$(".initially-hidden").show();
-
-
-  })
+    if (success === true) {
+      $("#result-header").show();
+    }
+  });
 });
-
-
-/*
-
-hot
-temperate
-
-expensive
-moderate
-
-*/
