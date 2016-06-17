@@ -3,7 +3,7 @@
 ------
 ### GitHub Pages Link
 This single page is viewable on GitHub Pages at the following link:
-  #### http://aniekamp.github.io/vacation-survey/
+http://aniekamp.github.io/vacation-survey/
 ------
 ### Description
 Vacation Survey collects various answers from the user, and uses JavaScript to determine which (from a short list of destinations) is likely to be a meaningful recommendation to the user.
