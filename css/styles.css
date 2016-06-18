@@ -7,16 +7,24 @@ body {
 .intro-section {
   width: 100%;
   min-height: 35vh;
+  max-height: 50vh;
   background-image: url("https://www.interexchange.org/images/participant_programs/banners/work-travel-new-zealand.jpg");
   background-size: cover;
-
+  background-position: center;
 }
+
 .intro-section h1 {
   font-size: 6em;
   text-align: center;
   color: #EFEFEF;
-  line-height: 35vh;
+  line-height: 2em;
   margin: 0;
+}
+
+@media(min-width:768px){
+  .intro-section h1 {
+    line-height: 35vh;
+  }
 }
 
 /*QUESTION SECTION*/
